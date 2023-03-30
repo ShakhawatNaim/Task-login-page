@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/af25134cca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <button id="toggle-btn">
+        <img id="icon" src="./assets/images/dark-mode.png" />
+      </button>
+    </header>
+    <div class="form-box">
+      <h1>Login Here</h1>
+      <div class="input-box">
+        <i class="fa-regular fa-user"></i>
+        <input type="text" placeholder="Your Username" id="username" required />
+      </div>
+      <div class="input-box">
+        <i class="fa-solid fa-unlock-keyhole"></i>
+        <input
+          type="password"
+          placeholder="Your Password"
+          id="password"
+          required
+        />
+        <span class="eye" onclick="showPassword()">
+          <i id="show" class="fa-regular fa-eye"></i>
+          <i id="hide" class="fa-regular fa-eye-slash"></i>
+        </span>
+      </div>
+      <button type="button" class="login-btn" onclick="login()">LOGIN</button>
+    </div>
+
+    <!-- javascript file -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
